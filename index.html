@@ -5,8 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>git and github</title>
 </head>
-<body style="margin: 10px; background: yellow;">
-    <h1 style="text-align: center;">Git and Github</h1>
+<style>
+    body{
+        box-sizing: border-box;
+        background: yellow;
+        margin: 20px;
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        color: black;
+        transition: 0.5s;
+    }
+    p:hover{
+        color: green;
+        transition: 0.5s;
+        cursor: pointer;
+        text-shadow: 1px 3px 5px #000;
+    }
+    .div1{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation-name: gAnimation;
+        animation-duration: 2.5s;
+        border: 1px solid black;
+        border-radius: 50px;
+        margin-left: 600px;
+        animation-iteration-count: infinite;
+        box-shadow: 1px 1px 10px black;
+    }
+    @keyframes gAnimation {
+        0% {
+            transform: translateY(0);
+            background-color: none;
+        }
+        50% {
+            transform: translateY(-400px);
+            background-color: none; 
+        }
+        100% {
+            transform: translateY(0);
+            background-color: none;
+        }
+    }
+    .div2{
+        width: 50px;
+        height: 100px;
+        background: none;
+        position: relative;
+        animation-name: gAnimation;
+        animation-duration: 3s;
+        border: 1px solid red;
+        border-radius: 50px;
+        margin-left: 400px;
+        animation-iteration-count: infinite;
+        box-shadow: 1px 1px 10px red;
+    }
+    @keyframes gAnimation {
+        0% {
+            background: none; transform: translateY(0);
+        }
+        50% {
+            background: none; transform: translateY(-400px);
+        }
+        100% {
+            background: none; transform: translateY(0);
+        }
+    }
+    .div3{
+        width: 50px;
+        height: 50px;
+        background: none;
+        position: relative;
+        animation-name: gAnimation;
+        animation-duration: 3.5s;
+        border: 1px solid blue;
+        border-radius: 50px;
+        margin-left: 1000px;
+        animation-iteration-count: infinite;
+        box-shadow: 1px 1px 10px blue;
+    }
+    @keyframes gAnimation {
+        0% {
+            background: none; transform: translateY(0);
+        }
+        50% {
+            background: none; transform: translateY(-400px);
+        }
+        100% {
+            background: none; transform: translateY(0);
+        }
+    }
+    .div4{
+        width: 80px;
+        height: 100px;
+        background: none;
+        position: relative;
+        animation-name: gAnimation;
+        animation-duration: 4s;
+        border: 1px solid green;
+        border-radius: 50px;
+        margin-left: 750px;
+        animation-iteration-count: infinite;
+        box-shadow: 1px 1px 10px green;
+    }
+    @keyframes gAnimation {
+        0% {
+            background: none; transform: translateY(0);
+        }
+        50% {
+            background: none; transform: translateY(-400px);
+        }
+        100% {
+            background: none; transform: translateY(0);
+        }
+    }
+</style>
+<body>
+    <h1>Git and Github</h1>
     <h2>Git</h2>
     <p>Git is a powerful version control system that helps developers track and manage changes to their code. Think of it as a time machine for your projects, allowing you to save different versions, revert to previous states, and collaborate with others without overwriting each other's work. It's a distributed system, which means every developer has a complete copy of the project's history on their own computer, making it fast and reliable even without an internet connection.</p>
     <h2>GitHub</h2>
@@ -24,5 +145,11 @@
     <p>9. git remote add origin</p>
     <p>10. git branch -M main</p>
     <p>11. git push -u origin main</p>
+    
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    
 </body>
 </html>
